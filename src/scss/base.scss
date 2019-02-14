@@ -1,0 +1,18 @@
+.root {
+  margin: 0 auto;
+  width: 90%;
+  height: 300px;
+  display: flex;
+  border: 2px dashed #fff;
+  background: linear-gradient(to bottom, greenyellow, red);
+  background-origin: border-box;
+  
+}
+@keyframes big{
+  0% {
+    zoom: 1;
+  }
+  100%{
+    zoom: 1.2;
+  }
+}
