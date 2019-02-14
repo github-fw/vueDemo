@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">六边形</router-link> |
+      <router-link to="/home">六边形</router-link> |
       <router-link to="/about">路径图</router-link> |
       <router-link to="/line">折线图</router-link>
     </div>
