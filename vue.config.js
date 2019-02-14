@@ -5,7 +5,7 @@ function resolve(dir) {
 }
 
 module.exports = {
-  baseUrl: process.env.NODE_ENV === 'production' ? './' : '/',
+  baseUrl: process.env.NODE_ENV === 'production' ? '/vueDemo/dist/' : '/',
   lintOnSave: true,
   //设置跨域代理
   devServer: {
