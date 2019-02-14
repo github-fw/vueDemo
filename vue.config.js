@@ -10,9 +10,9 @@ module.exports = {
   //设置跨域代理
   devServer: {
     port: 3001,
-    proxy: {
+    // proxy: {
      
-    }
+    // }
   },
   configureWebpack: {
     plugins: [

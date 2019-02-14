@@ -6,15 +6,10 @@ import Line from './views/line.vue'
 
 Vue.use(Router)
 
-export default new Router({
+const router = new Router({
   mode: 'history',
   base: process.env.BASE_URL,
-  routes: [
-    {
-      path: '*',
-      redirect: '/home'
-    },
-    {
+  routes: [{
       path: '/home',
       name: 'home',
       component: Home
@@ -31,3 +26,20 @@ export default new Router({
     }
   ]
 })
+
+//前置守卫
+router.beforeEach((to, from, next) => {
+  // ...
+  if (to.query.type == 0) {
+    router.push('/home');
+  }
+  if (to.query.type == 1) {
+    router.push('/about');
+  }
+  if (to.query.type == 2) {
+    router.push('/line');
+  }
+  next();
+})
+
+export default router
