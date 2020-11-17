@@ -1,15 +1,17 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/home">六边形</router-link> |
-      <router-link to="/about">路径图</router-link> |
+      <router-link to="/home">六边形</router-link> | <router-link to="/about">路径图</router-link> |
       <router-link to="/line">折线图</router-link>
     </div>
-    <router-view/>
+    <router-view />
   </div>
 </template>
 
 <style lang="scss">
+.test {
+  font-size: 1;
+}
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
